@@ -38,7 +38,9 @@ gap: 10rem;
   }
 }
 `
+const FormationSection = styled.div`
 
+`
 
 
 
@@ -61,7 +63,7 @@ export default function main() {
         </div>
       </AboutSection>
 
-      <div className='SectionFormation'>
+      <FormationSection>
         <div>
           <h2>Formação</h2>
           <div>
@@ -85,7 +87,7 @@ export default function main() {
           </figure>
 
         </div>
-      </div>
+      </FormationSection>
 
       <div>
         <h2>Equipe</h2>
