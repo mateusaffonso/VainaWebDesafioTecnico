@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/VainaWebDesafioTecnico/static/css/main.e6c13ad2.css",
-    "main.js": "/VainaWebDesafioTecnico/static/js/main.469d2c31.js",
+    "main.js": "/VainaWebDesafioTecnico/static/js/main.f74b0764.js",
     "static/js/787.fc07a015.chunk.js": "/VainaWebDesafioTecnico/static/js/787.fc07a015.chunk.js",
     "static/media/backgroundDesktop.png": "/VainaWebDesafioTecnico/static/media/backgroundDesktop.5790b80b5d8209d649ff.png",
     "static/media/printClassroom.png": "/VainaWebDesafioTecnico/static/media/printClassroom.3a0ce92fbba2a957a7a8.png",
+    "static/media/backgroundFooter.png": "/VainaWebDesafioTecnico/static/media/backgroundFooter.c61892df472602030224.png",
     "static/media/ImageCodingFormation.png": "/VainaWebDesafioTecnico/static/media/ImageCodingFormation.7b793e2ba0e57c3054cc.png",
     "static/media/Marina.jpg": "/VainaWebDesafioTecnico/static/media/Marina.cc1e445aebc48efdf0d4.jpg",
     "static/media/AlineNogueira.jpg": "/VainaWebDesafioTecnico/static/media/AlineNogueira.633338c3efc70a21fbf1.jpg",
@@ -24,14 +25,19 @@
     "static/media/small-logo-VNW.svg": "/VainaWebDesafioTecnico/static/media/small-logo-VNW.e265a6c56515ee9cead459c8f312cc18.svg",
     "static/media/logoVNW.svg": "/VainaWebDesafioTecnico/static/media/logoVNW.c36305da718696f760d4e5fe7baad1be.svg",
     "static/media/smallcomputerwithyellowborder-radius.svg": "/VainaWebDesafioTecnico/static/media/smallcomputerwithyellowborder-radius.fb28294e139d1a12a7a2cf7ff557b233.svg",
+    "static/media/insta.svg": "/VainaWebDesafioTecnico/static/media/insta.4c0d98b5ba1ca50bd520097e823ee81f.svg",
+    "static/media/linkedin.svg": "/VainaWebDesafioTecnico/static/media/linkedin.76cbc12e12fb04a3b517c37458e1cd92.svg",
     "index.html": "/VainaWebDesafioTecnico/index.html",
+    "static/media/youtube.svg": "/VainaWebDesafioTecnico/static/media/youtube.ae8d86c06c7eae269111fa4f845e70bc.svg",
+    "static/media/facebook.svg": "/VainaWebDesafioTecnico/static/media/facebook.28d2ca5045bace9ac9301b534921a6fe.svg",
+    "static/media/medium.svg": "/VainaWebDesafioTecnico/static/media/medium.83ce9e2793b59a39095985a286487fb7.svg",
     "static/media/magnifyingGlass.svg": "/VainaWebDesafioTecnico/static/media/magnifyingGlass.96c32d1b8ba7c5c600bb10907fa753a0.svg",
     "main.e6c13ad2.css.map": "/VainaWebDesafioTecnico/static/css/main.e6c13ad2.css.map",
-    "main.469d2c31.js.map": "/VainaWebDesafioTecnico/static/js/main.469d2c31.js.map",
+    "main.f74b0764.js.map": "/VainaWebDesafioTecnico/static/js/main.f74b0764.js.map",
     "787.fc07a015.chunk.js.map": "/VainaWebDesafioTecnico/static/js/787.fc07a015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.469d2c31.js"
+    "static/js/main.f74b0764.js"
   ]
 }
