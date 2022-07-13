@@ -13,6 +13,16 @@ export const GlobalStyled = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+    font-family: 'Montserrat', sans-serif ;
+
+  }
+
   :root{
     font-size: 62.5%;
 

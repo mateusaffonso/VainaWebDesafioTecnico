@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import styled from 'styled-components'
+import React, { useEffect, useState } from 'react';
+import * as S from './style'
+
 
 import LogoVNWMain from './images/logoVNW.svg'
 import ImageComputer from './images/SectionFormation/smallcomputerwithyellowborder-radius.svg'
@@ -25,285 +26,116 @@ import PhotoPriscila from './images/TeamSection/MembrosVNW/Priscila.jpg'
 
 
 
-const MainSection = styled.main`
-margin-top: 7rem;
-margin-left: var(--margin-pattern);
-
-h2 {
-    font-size: 4.8rem;
-    color: #0F2260;
-  }
-`
-
-const AboutSection = styled.div`
-width: 100%;
-/* border: 2px solid; */
-display: flex;
-align-items: center;
-gap: 10rem;
-
-  img {
-    width: 40rem;
-  }
-
-.AboutTextSection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3rem;
-  padding-right: 2.5rem;
-
-
-  
-
-  p {
-    font-size: 1.9rem;
-    color: #000000;
-    line-height: 2.7rem;
-  }
-}
-`
-const FormationSection = styled.div`
-width: 100%;
-margin-top: 15rem;
-
-.contentFormationSection {
-  display: flex;
-  justify-content: space-between;
-
-  figure{
-    width: 54%;
-
-    img{
-      width: 100%;
-      height: 55rem;
-    }
-  }
-
-  .TextSection{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 6rem;
-
-    h3{
-      font-size: 2.4rem;
-      color: #0F2260;
-    }
-
-    .SectionStack{
-      width:44rem;
-      display: flex;
-      gap: 1rem;
-
-      p {
-        font-size: 1.55rem;
-        line-height: 2.2rem;
-      }
-
-      section {
-        
-        h3 {
-          margin-bottom: 1rem;
-        }
-      }
-    }
-  }
-}
-`
-
-const TeamSection = styled.div`
-width: 85%;
-display: flex;
-flex-direction: column;
-gap: 2.5rem;
-
-margin-top: 15rem;
-
-  .SectionSearch {
-    width: 100%;
-    height: 8rem;
-    background-color: #0F2260;
-
-    display: flex;
-    align-items: center;
-    padding-left: 10rem;
-
-    input {
-      border-radius: 0.5rem;
-      font-size: 2rem;
-      background-color: #0F2260;
-      color: #BCE0FD;
-    }
-  }
-
-  .SectionImages {
-    width: 100%;
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
-
-    margin-top: 2rem;
-
-    div {
-      width: 23.28rem;
-      height: 28rem;
-
-      position: relative;
-
-      img {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-
-      }
-
-      h4,p {
-        width: 100%;
-        height: fit-content;
-        position: absolute;
-        z-index: 1;
-        text-align: center;
-        bottom: 1rem;
-
-      }
-
-     h4 {
-      font-size: 1.8rem;
-      bottom: 3.5rem;
-     }
-
-     p {
-      font-size: 1.5rem;
-     }
-
-
-    }
-  }
-
-`
-
-const EventsSection = styled.div`
-width:100%;
-display: flex;
-flex-direction: column;
-margin-top: 10rem;
-padding-right: 1.4rem;
-
-
-  h2 {
-    margin-bottom: 3rem;
-  }
-
-  img {
-    
-    width: 76%;
-  }
-
-  .EventsContent {
-    display: flex;
-
-    section {
-      margin-block: auto;
-
-      h3 {
-        font-size: 3.3rem;
-        
-      }
-
-      p {
-        margin-top: 2rem;
-        font-size: 1.6rem;
-      }
-    }
-  }
-`
-
 
 
 export default function Main() {
 
-  const [Team, setTeam] = useState([
+  
+
+  const [Team] = useState([
     {
       nome: 'Dimitri Duque',
       job: '#voluntários',
-      image:{PhotoDimitri}
+      image:PhotoDimitri
     },
     {
       nome: 'Hugo Sabino',
-      job: '#voluntário',
-      image:{PhotoHugo}
+      job: '#voluntários',
+      image:PhotoHugo
     },
     {
       nome: 'Karla De Melo',
-      job: '#voluntário',
-      image:{PhotoKarla}
+      job: '#voluntários',
+      image:PhotoKarla
     },
     {
       nome: 'Paula Misan',
       job: '#voluntários',
-      image:{PhotoPaula}
+      image:PhotoPaula
     },
     {
       nome: 'Thais Brait',
       job: '#voluntários',
-      image:{PhotoThais}
+      image:PhotoThais
     },
     {
       nome: 'Aline Fróes',
       job: '#CEO',
-      image:{PhotoAlineF}
+      image:PhotoAlineF
     },
     {
       nome: 'Aline Nogueira',
       job: '#Agente Socioemocional',
-      image:{PhotoAlineN}
+      image:PhotoAlineN
     },
     {
       nome: 'Andrea Marinho',
       job: '#Psicóloga',
-      image:{PhotoAndrea}
+      image:PhotoAndrea
     },
     {
       nome: 'Cris Dos Prazeres',
       job: '#Coordenadora Executiva',
-      image:{PhotoCris}
+      image:PhotoCris
     },
     {
       nome: 'Karynne Moreira',
-      job: '# Facilitadora Técnica',
-      image:{PhotoKarynne}
+      job: '#Facilitadora Técnica',
+      image:PhotoKarynne
     },
     {
       nome: 'Luzia Merlim',
-      job: '# Agente Socioemocional',
-      image:{PhotoLuzia}
+      job: '#Agente Socioemocional',
+      image:PhotoLuzia
     },
     {
       nome: 'Mariana Correia',
       job: '#Coordenadora Administrativa',
-      image:{PhotoMariana}
+      image:PhotoMariana
     },
     {
       nome: 'Marina Tiago',
       job: '#Agente de Estratégia',
-      image:{PhotoMarina}
+      image:PhotoMarina
     },
     {
       nome: 'Marlon Yuri',
       job: '#Instrutor Técnico',
-      image:{PhotoMarlon}
+      image:PhotoMarlon
     },
     {
       nome: 'Priscila Tufani',
       job: '#Agente de Estratégia',
-      image:{PhotoPriscila}
+      image:PhotoPriscila
     },
   ])
 
+  const [TeamFiltred, setTeamFiltred] = useState([])
+
+
+  const FilterTeam = (event) => {
+    
+    const Filtred = Team.filter((item) => {
+
+      if(item.nome.toLowerCase().includes(event.target.value.toLowerCase())) {
+        return true;
+      }
+      
+    });
+
+    setTeamFiltred(Filtred)
+  }
+
+
+  useEffect(() => {
+    setTeamFiltred(Team)
+  }, [Team])
+
+  
+
   return(
-    <MainSection>
-      <AboutSection>
+    <S.MainSection>
+      <S.AboutSection id='AboutId'>
         <figure>
           <img src={LogoVNWMain} alt='Logo do Vai na Web'/>
         </figure>
@@ -317,9 +149,9 @@ export default function Main() {
           Com o objetivo de acentuar a potência mundial que é a juventude, o Vai na Web tem se tornado cada vez mais um lugar de transformação. Através da cultura do afeto, a equipe do programa entende que “educar não é impor informação, é trocar” e sua maior riqueza, segundo a coordenadora executiva, Cris dos Prazeres, “é respeitar a geração da juventude que está nesse processo de compartilhar”.
           </p>
         </div>
-      </AboutSection>
+      </S.AboutSection>
 
-      <FormationSection>
+      <S.FormationSection id='FormationId'>
         <div className='contentFormationSection'>
           <div className='TextSection'>
 
@@ -346,27 +178,30 @@ export default function Main() {
           </figure>
 
         </div>
-      </FormationSection>
+      </S.FormationSection>
 
-      <TeamSection>
+      <S.TeamSection id='TeamId'>
         <h2>Equipe</h2>
         <div className='SectionSearch'>
-          <input type="text" placeholder='Pesquisar...'/>
+          <input type="text" placeholder='Pesquisar...' onChange={FilterTeam}/>
           <img src={magnifyingGlass} alt='Desenho de uma lupa'/>
         </div>
         <section className='SectionImages'>
-          {Team.map((item) => (
+          {TeamFiltred.map((item) => (
             <div>
               <img src={item.image} alt={`Foto de ${item.nome}`}/>
+              <div className='Shadow'>
                 <h4>{item.nome}</h4>
                 <p>{item.job}</p>
+
+              </div>
             </div>
           ))}
           
         </section>
-      </TeamSection>
+      </S.TeamSection>
 
-      <EventsSection>
+      <S.EventsSection id='EventsId'>
         <h2>Eventos</h2>
         <div className='EventsContent'>
           <img src={GirlsClassroom} alt='print de tela de computador com foto da reunião da Tech Girls'/>
@@ -375,8 +210,8 @@ export default function Main() {
             <p>Com o objetivo de promover network entre mulheres de tecnologia, conectar talentos femininos com oportunidades no mercado da tecnologia, oferecer experiências de troca através de eventos com mulheres que já têm experiência no mercado da tecnologia, acelerar os talentos com ajuda para custeio de luz e internet para facilitar o processo de estudo, promover mentoria para as participantes do grupo.</p>
           </section>
         </div>
-      </EventsSection>
+      </S.EventsSection>
 
-    </MainSection>
+    </S.MainSection>
   );
 }

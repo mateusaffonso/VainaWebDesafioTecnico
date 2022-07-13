@@ -1,7 +1,6 @@
 import React from 'react';
-import styled from 'styled-components'
+import * as S from './style'
 
-import backgroundFooter from './images/backgroundFooter.png'
 
 import IconFacebook from './images/icons/facebook.svg'
 import IconInsta from './images/icons/insta.svg'
@@ -11,55 +10,12 @@ import IconYoutube from './images/icons/youtube.svg'
 
 
 
-const FooterSection = styled.footer`
-width: 100%;
-background: url(${backgroundFooter});
-height: 40rem;
 
-padding-left: var(--margin-pattern);
-padding-top: 10rem;
-margin-top: 15rem;
-
-display: flex;
-flex-direction: column;
-gap: 5rem;
-
-color: #FFFFFF;
-
-  h2{
-    font-size: 5.4rem;
-
-  }
-
-  p {
-    font-size: 2rem;
-    font-weight: 500;
-    width: 40%;
-  }
-
-  .sectionSocialLinks {
-    width: 62%;
-
-    display: flex;
-    gap: 3rem;
-
-    section {
-      display: flex;
-      justify-content: space-between;
-      width: 76%;
-    }
-  }
-
-  img {
-    width: 6.5rem;
-  }
-
-`
 
 export default function Footer() {
   return(
     <>
-      <FooterSection>
+      <S.FooterSection id='ContactsId'>
         <h2>Contato</h2>
         <div className='sectionSocialLinks'>
           <p>Siga nossas redes sociais e fique conectado com todas as novidades.</p>
@@ -71,7 +27,7 @@ export default function Footer() {
             <a href='https://www.youtube.com/c/VaiNaWeb' target='_blanck'><img src={IconYoutube} alt='Ícone do Youtube'/></a>
           </section>
         </div>
-      </FooterSection>
+      </S.FooterSection>
     </>
   );
 }
