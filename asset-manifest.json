@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/VainaWebDesafioTecnico/static/css/main.e6c13ad2.css",
-    "main.js": "/VainaWebDesafioTecnico/static/js/main.f74b0764.js",
+    "main.js": "/VainaWebDesafioTecnico/static/js/main.beb69ba2.js",
     "static/js/787.fc07a015.chunk.js": "/VainaWebDesafioTecnico/static/js/787.fc07a015.chunk.js",
     "static/media/backgroundDesktop.png": "/VainaWebDesafioTecnico/static/media/backgroundDesktop.5790b80b5d8209d649ff.png",
     "static/media/printClassroom.png": "/VainaWebDesafioTecnico/static/media/printClassroom.3a0ce92fbba2a957a7a8.png",
@@ -33,11 +33,11 @@
     "static/media/medium.svg": "/VainaWebDesafioTecnico/static/media/medium.83ce9e2793b59a39095985a286487fb7.svg",
     "static/media/magnifyingGlass.svg": "/VainaWebDesafioTecnico/static/media/magnifyingGlass.96c32d1b8ba7c5c600bb10907fa753a0.svg",
     "main.e6c13ad2.css.map": "/VainaWebDesafioTecnico/static/css/main.e6c13ad2.css.map",
-    "main.f74b0764.js.map": "/VainaWebDesafioTecnico/static/js/main.f74b0764.js.map",
+    "main.beb69ba2.js.map": "/VainaWebDesafioTecnico/static/js/main.beb69ba2.js.map",
     "787.fc07a015.chunk.js.map": "/VainaWebDesafioTecnico/static/js/787.fc07a015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.f74b0764.js"
+    "static/js/main.beb69ba2.js"
   ]
 }
